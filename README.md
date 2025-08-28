@@ -4,4 +4,4 @@
 # About Me
 
 
-Hi, I'm Owen Fang, a current undergraduate at Virginia Tech College of Engineering, majoring in Computer Science and Mathematics. I'm passionate about Full-Stack Development and AI/ML Engineering
+Hi, I'm Owen Fang, a current undergraduate at Virginia Tech College of Engineering, double-majoring in Computer Science and Mathematics. I'm passionate about Software Development and AI/ML Engineering. I enjoy taking on projects that challenge me to learn and put my problem-solving skills to the test
