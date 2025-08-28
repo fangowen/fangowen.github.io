@@ -1,5 +1,5 @@
-[LinkedIn](https://www.linkedin.com/in/owen-fang-6a4a99293/) | 
-[Resume](Owen%20Fang%20Resume)
+# [LinkedIn](https://www.linkedin.com/in/owen-fang-6a4a99293/) | 
+# [Resume](Owen%20Fang%20Resume)
 
 
 # About Me
