@@ -5,3 +5,8 @@
 
 
 Hi, I'm Owen Fang, a current undergraduate at Virginia Tech College of Engineering, double-majoring in Computer Science and Mathematics. I'm passionate about Software Development and AI/ML Engineering. I enjoy taking on projects that challenge me to learn and put my problem-solving skills to the test
+
+# Projects
+
+## Fantasy Football Web Scrapper [REPO](https://github.com/fangowen/espn-qb-scraper)
+ | Gets the top fantasy performers of each week and sends emails to players of the league.
