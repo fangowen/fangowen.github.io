@@ -1,4 +1,4 @@
-## [LinkedIn](https://www.linkedin.com/in/owen-fang-6a4a99293/) | [Resume](Owen_Fang_Resume%20(2).pdf)
+## [LinkedIn](https://www.linkedin.com/in/owen-fang-6a4a99293/) | [Resume](Owen_Fang_Resume%20(3).pdf)
 
 
 # About Me
