@@ -13,3 +13,6 @@ Hi, I'm Owen Fang, a current undergraduate at Virginia Tech College of Engineeri
 
 ## Restaurant Aspect Analysis [Github](https://github.com/fangowen/restaurant_aspect_analysis)
  | Analyzing restaurant reviews using aspect-based sentiment analysis
+
+## Pathfinding Algorithm Visualizer [Demo](https://fangowen.github.io/pathfindingAlgos/)
+| Visualize A*, Djikstra, and BFS pathfinding algorithms
