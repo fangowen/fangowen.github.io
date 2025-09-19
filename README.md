@@ -11,5 +11,5 @@ Hi, I'm Owen Fang, a current undergraduate at Virginia Tech College of Engineeri
 ## Fantasy Football Web Scrapper [Github](https://github.com/fangowen/espn-qb-scraper)
  | Gets the top fantasy performers of each week and sends emails to players of the league.
 
- ## Restaurant Aspect Analysis [Github](https://github.com/fangowen/restaurant_aspect_analysis)
+## Restaurant Aspect Analysis [Github](https://github.com/fangowen/restaurant_aspect_analysis)
  | Analyzing restaurant reviews using aspect-based sentiment analysis
