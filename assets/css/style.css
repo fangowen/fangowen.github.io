@@ -15,35 +15,43 @@ body {
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1rem 2rem;       /* smaller horizontal padding */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   z-index: 10;
+  overflow: visible;        /* fixes text clipping */
 }
-.navbar .logo {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: var(--primary);
-}
+
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;          /* prevents cutoff on smaller widths */
+  margin: 0;
+  padding: 0;
 }
+
 .navbar a {
   text-decoration: none;
   color: var(--text);
+  font-family: 'Poppins', sans-serif;
   transition: color 0.3s;
 }
+
 .navbar a:hover {
   color: var(--primary);
 }
 
+.menu-icon {
+  display: none; /* hides hamburger icon on desktop */
+}
 
+/* HERO */
 .hero {
   height: 100vh;
   display: flex;
@@ -130,9 +138,28 @@ footer {
   margin-top: 3rem;
 }
 
-/* MOBILE */
-@media (max-width: 600px) {
-  .navbar ul {
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  #nav-links {
     display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  #nav-links.show {
+    display: flex;
   }
 }
+
+
