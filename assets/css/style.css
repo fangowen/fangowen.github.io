@@ -19,21 +19,25 @@ body {
   width: 100%;
   background: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; 
   align-items: center;
-  padding: 1rem 2rem;       /* smaller horizontal padding */
+  padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   z-index: 10;
-  overflow: visible;        /* fixes text clipping */
+  overflow: visible;
+  gap: 4rem;
 }
+
 
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;          /* prevents cutoff on smaller widths */
   margin: 0;
   padding: 0;
+  flex-wrap: nowrap;      
+  flex-shrink: 1;         
+  min-width: 0;          
 }
 
 .navbar a {
@@ -160,6 +164,7 @@ footer {
   #nav-links.show {
     display: flex;
   }
+  
 }
 
 
