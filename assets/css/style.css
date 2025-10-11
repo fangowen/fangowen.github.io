@@ -12,7 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
@@ -44,7 +43,7 @@ body {
   color: var(--primary);
 }
 
-/* HERO */
+
 .hero {
   height: 100vh;
   display: flex;

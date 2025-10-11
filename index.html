@@ -10,13 +10,15 @@
 <body>
 
   <nav class="navbar">
-    <div class="logo">Owen Fang</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="logo">Owen Fang</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <ul id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 
   <section class="hero">
     <h1>Hello, I'm <span>Owen Fang</span></h1>
@@ -61,6 +63,7 @@
       <a href="odfang25@gmail.com">Email</a>
       <a href="https://github.com/fangowen">GitHub</a>
       <a href="https://linkedin.com/in/fangowen">LinkedIn</a>
+      <a href="assets/Owen_Fang_Resume.pdf" target="_blank">Resume</a>
     </div>
   </section>
 
@@ -68,5 +71,10 @@
     <p>© 2025 Owen Fang</p>
   </footer>
 
+  <script>
+  function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('active');
+  }
+</script>
 </body>
 </html>
