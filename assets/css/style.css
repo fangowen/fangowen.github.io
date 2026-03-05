@@ -81,6 +81,17 @@ body {
   opacity: 0.8;
 }
 
+/* PROFILE PIC */
+.profile-pic {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
 /* SECTIONS */
 section {
   padding: 5rem 2rem;
