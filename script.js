@@ -32,12 +32,22 @@ const projects = [
   {
     title: "C++ Thread Pool",
     type: "software",
-    year: "Pinned",
+    year: "Software",
     description:
       "A from-scratch C++17 thread pool using standard library primitives, futures, and benchmarked worker-thread performance.",
     tags: ["C++17", "Concurrency", "Benchmarking"],
     url: "https://github.com/fangowen/jubilant-fortnight",
     color: "#4d67a4",
+  },
+  {
+    title: "Worldle Definer",
+    type: "software",
+    year: "July 2025",
+    description:
+      "A geography-themed web project that helps define and explore Worldle-style country clues and answers.",
+    tags: ["JavaScript", "Geography", "Google Extension"],
+    url: "https://github.com/fangowen/worldledefiner",
+    color: "#6f5fb8",
   },
 ];
 
