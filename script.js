@@ -40,13 +40,12 @@ const projects = [
     color: "#4d67a4",
   },
   {
-    title: "Worldle Definer",
+    title: "Wordle Definer",
     type: "software",
     year: "July 2025",
-    description:
-      "A geography-themed web project that helps define and explore Worldle-style country clues and answers.",
-    tags: ["JavaScript", "Geography", "Google Extension"],
-    url: "https://github.com/fangowen/worldledefiner",
+    description: "A Google Extension for Defining the Word of The Day.",
+    tags: ["JavaScript", "Google Extension", "Software"],
+    url: "https://github.com/fangowen/wordledefiner",
     color: "#6f5fb8",
   },
 ];
