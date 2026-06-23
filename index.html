@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Owen Fang is a Virginia Tech computer science and mathematics student building LLM agents, backend systems, and data-driven research tools."
+    />
+    <title>Owen Fang | Software, AI, and Research</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Profile links">
+      <a class="brand" href="#top" aria-label="Owen Fang home">
+        <span>Owen Fang</span>
+      </a>
+      <div class="social-links">
+        <a class="social-button linkedin" href="https://www.linkedin.com/in/owen-fang-6a4a99293/" rel="noreferrer">
+          LinkedIn
+        </a>
+        <a class="social-button github" href="https://github.com/fangowen" rel="noreferrer">
+          GitHub
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="profile-hero" aria-label="Profile introduction">
+        <div class="profile-copy">
+          <p class="kicker">Computer Science + Mathematics</p>
+          <p>
+            Hi I'm Owen, a CS + Math student at Virginia Tech. I played lacrosse for
+            16 years and now I'm bringing that competitive drive into the tech scene.
+          </p>
+          <p>
+            Most of my time goes into developing software, exploring all the newest
+            AI tools, and convincing myself I can build anything.
+          </p>
+          <p>
+            When I'm not working on something, I'm probably exploring the internet
+            (scrolling), playing video games, or contemplating buying something.
+          </p>
+          <p>
+            Feel free to reach out to me on LinkedIn!
+          </p>
+          <div class="profile-links">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="mailto:odfang25@gmail.com">Email</a>
+          </div>
+        </div>
+        <button class="profile-photo" type="button" aria-label="Toggle profile photo">
+          <img
+            src="assets/portfoliopicture.png"
+            data-primary-src="assets/portfoliopicture.png"
+            data-alt-src="assets/portfolio-click-photo.png"
+            data-primary-alt="Owen Fang standing with a friend indoors"
+            data-alt-alt="Owen Fang wearing a hoodie in a car"
+            alt="Owen Fang standing with a friend indoors"
+          />
+        </button>
+      </section>
+
+      <section class="content-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading projects-heading">
+          <p class="kicker">Selected work</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+        <div class="filter-row" aria-label="Project filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="software">Software</button>
+          <button class="filter-button" type="button" data-filter="data">Data</button>
+        </div>
+        <div class="projects-grid" data-projects aria-live="polite"></div>
+      </section>
+
+      <section class="content-section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Background</p>
+            <h2 id="experience-title">Experience</h2>
+          </div>
+         
+        </div>
+        <div class="experience-list" data-experience></div>
+      </section>
+
+      <section class="content-section education-section" id="education" aria-labelledby="education-title">
+        <details class="education-dropdown">
+          <summary>
+            <span id="education-title">Education</span>
+          </summary>
+          <article class="education-card">
+            <h3>Virginia Polytechnic Institute and State University</h3>
+            <p>B.S. in Computer Science and Mathematics.</p>
+            <p>
+              Coursework includes Data Structures and Algorithms, Computer Organization,
+              Linear Algebra, Multivariable Calculus, and Discrete Mathematics.
+            </p>
+          </article>
+        </details>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="kicker"></p>
+          <h2 id="contact-title">Links</h2>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/fangowen" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/owen-fang-6a4a99293/" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:odfang25@gmail.com">Email</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
