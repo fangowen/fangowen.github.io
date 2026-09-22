@@ -1,5 +1,16 @@
 const projects = [
   {
+    title: "Where the Hokie am I?",
+    type: "software",
+    year: "VTHacks 14",
+    description:
+      "A 3D Virginia Tech campus guide that answers questions in multiple languages, gives walking directions, and plans your first week.",
+    tags: ["Three.js", "JavaScript", "Gemini API", "ElevenLabs", "OpenStreetMap"],
+    url: "https://github.com/fangowen/VTHacks2026",
+    devpostUrl: "https://devpost.com/software/hokie-war-table",
+    color: "#b64858",
+  },
+  {
     title: "Radical Red Discord Bot",
     type: "software",
     year: "Jan 2026",
@@ -63,6 +74,8 @@ const experience = [
       "Designed empathetic and cognitive-empathy response modes to compare effects on user behavior and physiological responses.",
       "Built a data pipeline for a 72-participant controlled study and won the People's Choice Award at the 2026 CHCI Student Research Symposium.",
     ],
+    posterLabel: "CHCI Research Poster",
+    posterUrl: "assets/chci-research-poster-2026.pdf",
   },
   {
     role: "Undergraduate Researcher",
@@ -75,6 +88,8 @@ const experience = [
       "Developing Python and SageMath softwares to compute and visualize graph reconfigurations.",
       "Scaling visualizations and search across graphs with 100+ vertices.",
     ],
+    posterLabel: "REU Research Poster",
+    posterUrl: "assets/reu-research-poster-2026.pdf",
   },
 ];
 
@@ -104,10 +119,13 @@ function renderProjects(filter = "all") {
           <div class="project-tags">
             ${project.tags.map((tag) => `<span>${tag}</span>`).join("")}
           </div>
-          <a class="project-link" href="${project.url}" aria-label="Open ${project.title}">
-            Open project
-            <span aria-hidden="true">-&gt;</span>
-          </a>
+          <div class="project-links">
+            <a class="project-link" href="${project.url}" aria-label="Open ${project.title}${project.devpostUrl ? " on GitHub" : ""}">
+              ${project.devpostUrl ? "GitHub" : "Open project"}
+              <span aria-hidden="true">-&gt;</span>
+            </a>
+            ${project.devpostUrl ? `<a class="project-link" href="${project.devpostUrl}" aria-label="Open ${project.title} on Devpost">Devpost <span aria-hidden="true">-&gt;</span></a>` : ""}
+          </div>
         </article>
       `,
     )
@@ -129,6 +147,10 @@ function renderExperience() {
             <ul class="experience-highlights">
               ${item.highlights.map((highlight) => `<li>${highlight}</li>`).join("")}
             </ul>
+            <a class="project-link experience-poster-link" href="${item.posterUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open ${item.posterLabel} PDF in a new tab">
+              ${item.posterLabel} (PDF)
+              <span aria-hidden="true">-&gt;</span>
+            </a>
           </div>
         </article>
       `,

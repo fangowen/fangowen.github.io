@@ -357,13 +357,20 @@ h3 {
   padding: 7px 10px;
 }
 
-.project-link {
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.project-link,
+.project-link:visited {
   align-items: center;
   color: var(--teal);
   display: inline-flex;
   font-weight: 800;
   gap: 6px;
-  margin-top: 16px;
 }
 
 .experience-section {
@@ -430,6 +437,10 @@ h3 {
   line-height: 1.5;
   margin: 0;
   padding-left: 18px;
+}
+
+.experience-poster-link {
+  margin-top: 16px;
 }
 
 .education-section {
