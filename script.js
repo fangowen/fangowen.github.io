@@ -95,15 +95,11 @@ const experience = [
 
 const projectsContainer = document.querySelector("[data-projects]");
 const experienceContainer = document.querySelector("[data-experience]");
-const filterButtons = document.querySelectorAll("[data-filter]");
 const profilePhotoButton = document.querySelector(".profile-photo");
 const profilePhoto = document.querySelector(".profile-photo img");
 
-function renderProjects(filter = "all") {
-  const visibleProjects =
-    filter === "all" ? projects : projects.filter((project) => project.type === filter);
-
-  projectsContainer.innerHTML = visibleProjects
+function renderProjects() {
+  projectsContainer.innerHTML = projects
     .map(
       (project) => `
         <article class="project-card">
@@ -157,14 +153,6 @@ function renderExperience() {
     )
     .join("");
 }
-
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-    renderProjects(button.dataset.filter);
-  });
-});
 
 profilePhotoButton.addEventListener("click", () => {
   const showingPrimary = profilePhoto.src.includes(profilePhoto.dataset.primarySrc);
